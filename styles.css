@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #111; 
+    color: #eee; 
+    margin: 0;
+    padding: 0;
+    background-image: url('achtergrond.png');
+    background-repeat: no-repeat;
+    background-size:100%;   
+    background-attachment: fixed;
+}
+
+header{
+    background:#222;
+    width:100%;
+}
+  
+.header-logo{
+    width:150px;
+    padding:15px;
+}
+  
+.header-container{
+    width:80%;
+    margin:0 auto;
+}
+  
+.smallcontainer{
+   width:50%;
+   margin:0 auto;
+}
+  
+.header-flex{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+  
+nav{
+    display:flex;
+    gap:40px;
+    text-transform:uppercase
+}
+  
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    line-height:150px;
+}
+  
+.navbar{
+    color:white ;
+    font-family:Pixelify Sans;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.logo{
+    width:10%
+}
+
+main {
+    padding: 50px;
+    text-align: center;
+}
+
+.main-img{
+    width:40%;
+    border-radius: 20px;
+}
+
+
+h1 {
+    font-size: 4em;
+    color: #f0f;
+    text-shadow: 2px 2px 4px #000;
+    margin-bottom: 20px;
+    font-family: Pixelify Sans;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2{
+    font-size: 3em;
+    color: #f0f;
+    text-shadow: 2px 2px 4px #000;
+    margin-bottom: 20px;
+    font-family: Pixelify Sans;
+    text-transform: uppercase;
+    text-align: center; 
+}
+
+.preorder{
+    width:160px;
+    height:60px;
+    font-size:1em;
+    border-radius:50px;
+    background-color:#f0f;
+    margin-top:20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: pulse 1.5s infinite;
+}
+
+.hero p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.games{
+    size:150px, 100px;
+}
+
+footer {
+    width:100%;
+    background-color: #222;
+    text-align: center;
+}
+
+.adress{
+    padding-bottom:10px;
+    padding-top:10px;
+}
+.copyright{
+    padding-top:20px;
+}
+
+.flex{
+    display:flex;
+    justify-content:center;
+    gap:2%;
+    margin-top: 2%;
+}
+
+.games{
+    border-radius:10px;
+}
+
+
+/* de aftelklok */
+canvas {
+    display: block;
+    margin: 20px auto;
+}
+#countdown-text {
+    font-size: 2em;
+    margin-top: 10px;
+}
+/* klaar */
+
+/* animaties */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+/* klaar */
