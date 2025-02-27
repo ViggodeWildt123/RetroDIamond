@@ -1,66 +1,73 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro Diamond - De Retro Gameconsole</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet"> 
-    <link rel="icon" type="image" href="RetroDiamond.png">   
-</head>
-<body>
-    <header>
-        <div class="header-container header-flex">
-            <img class="logo" src="RetroDiamond.png" alt="retroconsole">
-          <nav>
-            <a class="navbar"href="">Home</a>
-            <a class="navbar"href="">Games</a>
-            <a class="navbar"href="">Pre-Order</a>
-            <!-- <a class="navbar"href="">Over-Ons</a> -->
-          </nav>
-        </div>
-    </header>
-
-    <main>
-        <section class="hero">
-            <h1>Retro<br>Diamond</h1>
-            <p>De Retro Gameconsole die je moet hebben!</p>
-        </section>
-        <section>
-            <img class="main-img" src="retroconsole.jpg" alt="retroconsole">
-        </section>
-        <section>
-            <h2>de Retrodiamond komt uit over</h2>
-            
-            <canvas id="countdownCanvas" width="200" height="200"></canvas>
-            <div id="countdown-text"></div>
-    
-        </section>
-        <section>
-            <h2>Pre-Order</h2>
-            <p>wil je de RetroDiamond Pre-Orderen klik dan nu op de knop hier benenden</p>
-            <button class="preorder" id="submit" type="submit">Pre-Order Nu!</button>
-        </section>
-        <section>
-            <h2>Games</h2>
-            <p>je kunt op de RetroDiamond games spelen zoals The Legend of Zelda Sonic the Hedgehog en andere Nintendo, SEGA games of natuurlijk onze eigen games </p>
-            <div class="flex">
-                <img class="games" src="10025_The_Legend_of_Zelda.png" alt="" width="150" height="200">
-                <img class="games" src="sonic.png" alt="" width="150" height="200">
-                <img class="games" src="coming-soon.png" alt="" width="150" height="200">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Retro Diamond - De Retro Gameconsole Die Je Moet Hebben!</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet"> 
+        <link rel="icon" type="image" href="RetroDiamond.png">   
+    </head>
+    <body>
+        <header>
+            <div class="header-container header-flex">
+                <img class="logo" src="Retro Diamond logo mogelijk DEF 1.png" alt="retroconsole">
+            <nav>
+                <a class="navbar"href="#">Home</a>
+                <a class="navbar"href="#preorder">Pre-Order</a>
+                <a class="navbar"href="#games">Games</a>  
+            </nav>
             </div>
-        </section>
-    </main>
+        </header>
+        <div class="header-background">
+        </div>
 
-    <footer>
-        <p class="copyright">&copy; 2025 Retro Diamond</p>
-        <p class="adress">Korenbloemlaan 88 <br>
-            5678 XY Rotterdam <br>
-            Nederland
-        </p>
-    </footer>
-    <script src="script.js"></script>
-</body>
+        <main>
+            <section class="hero">
+                <h1>Retro<br>Diamond</h1>
+                <p>De Retro Gameconsole die je moet hebben</p>
+            </section>
+            <section>
+                <img class="main-img" src="retroconsole.jpg" alt="retroconsole">
+            </section>
+            <section>
+                <h2>de Retrodiamond komt uit over</h2>
+                
+                <canvas id="countdownCanvas" width="200" height="200"></canvas>
+                <div id="countdown-text"></div>
+        
+            </section>
+            <section id="preorder">
+                <h2>Pre-Order</h2>
+                <p>wil je de RetroDiamond Pre-Orderen klik dan nu op de knop hier benenden</p>
+                <button class="preorder" id="submit" type="submit">Pre-Order Nu</button>
+            </section>
+            <section>
+                <h2>Games</h2>
+                <p>je kunt op de RetroDiamond games spelen zoals The Legend of Zelda Sonic the Hedgehog en andere Nintendo, SEGA games of natuurlijk onze eigen games </p>
+                <div class="flex" id="games">
+                    <img class="games" src="10025_The_Legend_of_Zelda.png" alt="" width="150" height="200">
+                    <img class="games" src="sonic.png" alt="" width="150" height="200">
+                    <img class="games" src="coming-soon.png" alt="" width="150" height="200">
+                </div>
+                <p>onze games en de retrodiamond zijn tekoop bij</p>
+                <div class="icons">
+                    <img src="amazon-logo-24.png" alt="">
+                    <img src="icons8-temu.svg" alt="">
+                    <img class="icons" src="Bol..svg" alt="">
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p class="copyright">&copy; 2025 Retro Diamond</p>
+            <p class="adress">Korenbloemlaan 88 <br>
+                5678 XY Rotterdam <br>
+                Nederland
+            </p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
 </html>

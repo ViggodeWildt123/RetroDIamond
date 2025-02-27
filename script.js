@@ -41,3 +41,20 @@ function updateCountdown() {
 
 updateCountdown();
 const interval = setInterval(updateCountdown, 1000);
+
+// knop word een andere kleur
+
+window.addEventListener("scroll", function() {
+    let button = document.getElementById("submit");
+    let scrollPosition = document.documentElement.scrollTop || window.scrollY;
+    
+    if (scrollPosition > 1000) { // Check of je wél kunt scrollen
+        button.style.backgroundColor = "blue";
+        button.style.color = "white";
+    } else {
+        button.style.backgroundColor = "#1aff91";
+        button.style.color = "black";
+    }
+});
+
+

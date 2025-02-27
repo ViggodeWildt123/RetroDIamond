@@ -1,7 +1,9 @@
 *{
     margin:0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: synthwave;
+    scroll-behavior: smooth;
+    text-shadow: 2px 2px 4px #000;
 }
 
 body {
@@ -18,16 +20,20 @@ body {
 header{
     background:#222;
     width:100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0; 
+    width: 100%;
 }
   
-.header-logo{
-    width:150px;
-    padding:15px;
-}
   
 .header-container{
     width:80%;
     margin:0 auto;
+}
+
+.header-background{
+    height: 150px;
 }
   
 .smallcontainer{
@@ -51,7 +57,7 @@ nav a{
     text-decoration:none;
     color:white;
     font-weight:bold;
-    line-height:150px;
+    line-height:50px;
 }
   
 .navbar{
@@ -62,7 +68,7 @@ nav a{
 }
   
 .logo{
-    width:10%
+    width:8%
 }
 
 main {
@@ -101,7 +107,7 @@ h2{
     height:60px;
     font-size:1em;
     border-radius:50px;
-    background-color:#f0f;
+    background-color:rgb(180, 180, 19);
     margin-top:20px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -137,12 +143,16 @@ footer {
     justify-content:center;
     gap:2%;
     margin-top: 2%;
+    padding-bottom: 20px;
 }
 
 .games{
     border-radius:10px;
 }
 
+.icons{
+    height:50px;
+}
 
 /* de aftelklok */
 canvas {
@@ -160,5 +170,12 @@ canvas {
     0% { transform: scale(1); }
     50% { transform: scale(1.1); }
     100% { transform: scale(1); }
+}
+/* klaar */
+
+/* font-face */
+@font-face {
+    font-family: synthwave;
+    src: url(indieground-freebies-font-commando/commando.ttf);
 }
 /* klaar */
